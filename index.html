@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lokation-Tool</title>
+    <title>BEM-Tools GeoNav</title>
     <link rel="stylesheet" href="lokationtool_style.css" />
 
 
@@ -16,8 +16,8 @@
     </div>
 
     <div class="upperTitle" font-family="Comic Sans MS", Arial, sans-serif> 
-        <h1>|| Lokation-Tool ||<br>|| Suchmaschine ||</h1>
-        <h2>GPS Koordinaten<br>+ Kartenvorschau<br>+ Navigation start</h2>
+        <h1>|| BEM-Tools GeoNav ||<br>|| Suchmaschine ||</h1>
+        <h2>GPS Koordinaten<br>+ Kartenvorschau<br>+ Navigation starten</h2>
         <h3>...mit einem Klick &#9996;</h3>
     </div>
 
@@ -29,14 +29,10 @@
         <button type="button" class="btn admin-launch" id="openAdmin">Adminbereich</button>
     </div>
 
-    <div class="btn-container-fixed">    
-        <a href="../index.html" id="backBtn" class="btn">&#128072; Zurück</a>
-    </div>
-
     <div class="admin-modal" id="adminModal" aria-hidden="true">
         <div class="admin-card">
             <div class="admin-header">
-                <h3 class="admin-title">Adminbereich Lokationen</h3>
+                <h3 class="admin-title">Adminbereich BEM-Tools GeoNav</h3>
                 <button type="button" class="admin-close" id="closeAdmin">Schließen</button>
             </div>
 
@@ -49,7 +45,7 @@
                     <button type="button" class="admin-small-btn" id="adminLoginBtn">Anmelden</button>
                 </div>
                 <div class="admin-error" id="adminLoginError"></div>
-                <div class="admin-note">...noch ohne Funktion, Backend noch nicht eingerichtet!</div>
+                <div class="admin-note">Backend-fähig: Admin-Anmeldung und Datenbankzugriff per API.</div>
             </section>
 
             <section class="admin-panel" id="adminPanel">
@@ -85,9 +81,9 @@
     </div>
 
     <script>
-        const REMOTE_API_BASE = "https://chriss97st.ddns.net/lokationtool/api";
+        const REMOTE_API_BASE = "https://chriss97st.ddns.net/api";
         const API_BASE = window.location.hostname === "chriss97st.ddns.net"
-            ? "/lokationtool/api"
+            ? "/api"
             : REMOTE_API_BASE;
 
         const AUTH_TOKEN_KEY = "lokation_admin_token";
