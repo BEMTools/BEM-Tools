@@ -21,12 +21,12 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
 
-SECRET_KEY = os.getenv("LOKATION_SECRET_KEY", "change-me-before-public-deploy")
+SECRET_KEY = os.getenv("LOKATION_SECRET_KEY", "fckMEb4iLLD!E")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 12
 
-ADMIN_BOOTSTRAP_USER = os.getenv("LOKATION_ADMIN_USER", "admin")
-ADMIN_BOOTSTRAP_PASSWORD = os.getenv("LOKATION_ADMIN_PASSWORD", "admin123")
+ADMIN_BOOTSTRAP_USER = os.getenv("LOKATION_ADMIN_USER", "CSx")
+ADMIN_BOOTSTRAP_PASSWORD = os.getenv("LOKATION_ADMIN_PASSWORD", "1234admin1234!")
 
 ALLOWED_DATASETS = {
     "empg_bohrungen",
