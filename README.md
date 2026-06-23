@@ -6,7 +6,7 @@ Eine statische Frontend-Anwendung zur Suche von GPS-Koordinaten, Kartenvorschau 
 
 - `index.html` — neue Startseite der Anwendung
 - `suche.html` — Suchseite für die drei Datensätze
-- `lokationtool_style.css` — gemeinsames Styling
+- `style.css` — gemeinsames Styling
 - `backend/` — FastAPI-Backend mit SQLite
 - `empg_bohrungen.json`, `empg_schieber.json`, `gasunie_schieber.json` — Quelldaten
 
