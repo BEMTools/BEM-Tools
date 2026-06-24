@@ -501,6 +501,12 @@
             const newEntry = buildEmptyEntry(selectedDataset);
             workingEntries.push(newEntry);
             renderAdminTable();
+            
+            // Scroll to the new entry
+            const lastRow = adminTableBody.lastElementChild;
+            if (lastRow) {
+                lastRow.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
         });
 
         saveAdminChangesBtn.addEventListener("click", async () => {
