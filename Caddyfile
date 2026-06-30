@@ -1,5 +1,5 @@
 chriss97st.ddns.net {
-    root * /var/www/BEM-Tools
+    root * /home/csx/geonav_backend
     encode gzip
 
     handle_path /api/* {
